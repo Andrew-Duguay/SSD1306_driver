@@ -1,0 +1,12 @@
+../Src/graphics.c:5:6:drawRect	3
+../Src/graphics.c:16:6:eraseRect	3
+../Src/graphics.c:27:6:circleUtil	2
+../Src/graphics.c:52:6:drawCircle	3
+../Src/graphics.c:71:6:eraseCircle	3
+../Src/graphics.c:90:6:drawLine	7
+../Src/graphics.c:113:6:eraseLine	7
+../Src/graphics.c:136:6:drawTriangle	1
+../Src/graphics.c:140:6:eraseTriangle	1
+../Src/graphics.c:144:5:abs_int	2
+../Src/graphics.c:149:5:min	2
+../Src/graphics.c:154:5:max	2
