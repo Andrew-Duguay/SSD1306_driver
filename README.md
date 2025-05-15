@@ -2,11 +2,8 @@
 Lean driver for ssd1306 OLED display
 
 ## Overview
------------------------------------------
 
 Uses bare metal drivers entirely built from scratch. Utilizes I2C communication protocol but can easily be adapted.
-
------------------------------------------
 
 ## Features
 
@@ -15,8 +12,6 @@ Uses bare metal drivers entirely built from scratch. Utilizes I2C communication 
 - Full page refresh required
 - Primitive drawing functions: drawPixel(), drawLine(), drawCircle(), etc.
 - Commands for configuration such as invert, on/off commands, sleep/wake commands, brightness, etc.
-
------------------------------------------
 
 ## Hardware Requirements
 
