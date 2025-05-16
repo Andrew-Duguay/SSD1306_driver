@@ -13,29 +13,25 @@ int main(void)
 {
 	I2C1_init();
 	OLED_display_init();
-	//uart2_rxtx_init();
-	//temp_sensor_init();
-
 	clearDisplay();
-	drawRect(30,30,30,30);
 	display();
-	for(int i = 0; i < 3000000; i++){}
-	eraseRect(30,30,30,30);
-	display();
-	for(int i = 0; i < 3000000; i++){}
-	drawLine(-1,-1,130,65);
-	display();
-	for(int i = 0; i < 3000000; i++){}
-	eraseLine(-1,-1,130,65);
-	display();
-	for(int i = 0; i < 3000000; i++){}
-	drawLine(130,65,-1,-1);
-	display();
-	for(int i = 0; i < 3000000; i++){}
-	eraseLine(130,65,-1,-1);
-	display();
-	for(int i = 0; i < 3000000; i++){}
-	while(1){}
+	int x = 64, y = 32, r = 6;
+	int dy = 2, dx = 2, dr = 2;
+
+	while(1){
+		drawCircle(x,y,r);
+		display();
+		eraseCircle(x,y,r);
+		x += dx;
+		y += dy;
+		if(x <= r || x >= SCREEN_WIDTH - r){
+			dx *= -1;
+
+		}
+		if(y <= r || y >= SCREEN_HEIGHT - r){
+			dy *= -1;
+	}
+
 }
 
 
